@@ -209,9 +209,7 @@ forecast = [
 forecast.each {|day_of_week|
   temps = []
   day_of_week["temperatures"].each {|time, temp| temps << temp}
-  max = temps.max
-  min = temps.min
-  puts "#{day_of_week["day"]}: High of #{max}, Low of #{min}"
+  puts "#{day_of_week["day"]}: High of #{temps.max}, Low of #{temps.min}"
 }
 
 # http://www.ruby-doc.org/core-2.1.5/Hash.html#method-i-values
