@@ -51,3 +51,8 @@ forecast = [
 ]
 
 #----- your code below -----
+
+forecast.each {|day_of_week|
+    puts "#{day_of_week["day"]}: High of #{day_of_week["temperatures"]["high"]},
+    Low of #{day_of_week["temperatures"]["low"]}"
+}
